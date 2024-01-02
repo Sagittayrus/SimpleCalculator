@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Pacifico', cursive, Arial, sans-serif;
+  background-image: url('foodwars.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background fixed within the viewport */
+}
+
+/* ...rest of your CSS styles remain unchanged... */
+
+
+.calculator-container {
+  background-color: rgba(255, 255, 255, 0.432);
+  padding: 20px;
+  border-radius: 40px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+               0 0 20px rgba(255, 255, 255, 0.8),
+               0 0 30px rgba(255, 255, 255, 0.8),
+               0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+.text {
+  width: 90%;
+  height: 80px;
+  background-color: white;
+  font-size: 3rem;
+  border-radius: 70px;
+  margin-bottom: 30px;
+  transition: background-color 0.3s, font-size 0.3s;
+}
+
+input[type="button"] {
+  width: 20%;
+  height: 70px;
+  border-radius: 50px;
+  margin: 2%;
+  background-color: black;
+  color: gray;
+  font-size: 2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Media queries for responsiveness */
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .calculator-container {
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .text {
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  input[type="button"] {
+    width: 30%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+  }
+}
+
+  
